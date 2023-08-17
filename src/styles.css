@@ -1,1 +1,37 @@
-/* You can add global styles to this file, and also import other style files */
+
+.gradient{
+    background: linear-gradient(to left, #38B7F4, #8CA5E2, #FF87C4);
+}
+
+.text-center{
+    text-align: center ;
+    display: block;
+    margin: auto !important;
+}
+
+.text-white{
+    color: #ffff;
+}
+
+.btn-design{
+    background-color: #8580B0;
+    color: white;
+    display: block;
+    margin: 100px auto;
+    border: none;
+    height: 40px;
+    width: 25%; 
+}
+
+.toolbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    background-color: #1976d2;
+    color: white;
+    font-weight: 600;
+  }              
