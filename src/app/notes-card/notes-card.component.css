@@ -1,0 +1,27 @@
+.container{
+    margin: 0px 40%;
+    box-sizing: border-box;
+    box-shadow: -1px 1px 3px 1px #D1D2D7;
+    padding: 1px 14px;
+    height: max-content;
+    width: 26%;
+    border-radius: 4px !important;
+
+}
+.flex-container{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.d-none{
+    visibility: hidden;
+    opacity: 0.2;
+    transition: ease-in-out 0.5s, opacity 0.5s linear;
+}
+
+.container:hover .d-none{
+    visibility: visible;
+    opacity: 1;
+    background-color: #fff0f0;
+}

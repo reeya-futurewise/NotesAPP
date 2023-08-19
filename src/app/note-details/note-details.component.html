@@ -1,0 +1,25 @@
+<div class="description-container">
+  {{noteForm.value | json}}
+  <br>
+  <br>
+<form class="example-form" [formGroup]="noteForm">
+  <!-- <div *ngFor="let user of userData">  
+    <p>{{user.id}}</p> 
+    <p>{{user.title}}</p> 
+  </div> -->
+  <mat-form-field>
+      <mat-label>Title</mat-label>
+      <input matInput [class.is-invalid]="noteForm.get('title').invalid && noteForm.get('title').touched" id="name" type="text" formControlName="title">
+    </mat-form-field>
+    <mat-form-field>
+      <mat-label>Note</mat-label>
+      <textarea matInput rows="8" formControlName="description"></textarea>
+    </mat-form-field>
+    <div class="justify-content-end">
+      <button class="cancel" type="button">Cancel</button>
+      <button class="save ml-20" type="submit">Save</button>
+      <button class="save ml-20" type="button" (click)="loadApiData()" style="width: 100px;">Load Api Data</button>
+
+    </div>
+</form>
+</div>

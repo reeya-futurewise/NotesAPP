@@ -1,0 +1,18 @@
+
+.icon-position{
+    padding-right: 12px;
+    position: relative;
+    top: 4px
+}
+
+::ng-deep .mat-form-field{
+        display: block;
+        position: relative;
+        text-align: left;
+        width: 26%;
+        margin-left: 6% !important;
+      
+}
+::ng-deep .mat-form-field-appearance-legacy .mat-form-field-underline{
+        background-color: #AFAADB;
+}
